@@ -12,9 +12,10 @@ Read all of the following silently before saying anything:
 1. `private/data/profile/profile.md` — level, home break, boards
 2. `private/data/goals/goals.md` — what they're working towards this week
 3. `private/data/metrics/metrics.md` — physical state, recovery baseline, training capacity
-4. `private/data/activities.md` — **read this carefully**: what activities are available AND any notes on when/how often they can be done
-5. List `private/data/sessions/` and read the last 3 session logs — recent fatigue, patterns, what needs work
-6. List `private/data/plans/` — read last week's plan if it exists, note what was planned vs what actually happened
+4. `private/data/activities.md` — **read this carefully**: what activities are available AND when/how often they can be done
+5. `private/data/gym-programme.md` — if it exists, note the three session types (A/B/C) so you can assign the right one to each gym slot
+6. List `private/data/sessions/` and read the last 3 session logs — recent fatigue, patterns, what needs work
+7. List `private/data/plans/` — read last week's plan if it exists, note what was planned vs what actually happened
 
 Then fetch the surf forecast:
 - Search for the surf forecast for their home break for the next 7 days
@@ -77,7 +78,11 @@ Construct the week day by day using the constraint map from Step 2 and the rules
 
 #### Complementary training rules
 - **Only schedule an activity on a day and time when it is actually available** — if yoga is only on Tue/Thu evenings, it goes on Tue or Thu evening, nowhere else
-- Strength: max 2x/week. Best placed the day after surf (not before)
+- **Gym sessions: assign the right session type from the programme:**
+  - **Session A (Strength/Power)**: 2+ days before the next surf session, or the day after light surf when recovery is good
+  - **Session B (Functional/Surf-Specific)**: day before or after surf — won't cause DOMS that affects surfing
+  - **Session C (Active Recovery)**: day after intense surf or heavy gym, or any day energy/recovery is low
+  - If no gym programme exists, suggest running `/plan-gym` first
 - Mobility/yoga: excellent the evening before a surf day — but only if it's available that evening
 - Swimming or light cardio: good as active recovery on the day after an intense surf session
 - Land drills (pop-up, visualisation, stance): 10–15 min, any day, especially on flat or rest days — low cost, high value
@@ -119,7 +124,7 @@ Save to `private/data/plans/YYYY-WNN.md` (e.g. `2025-W23.md`).
 - Focus this week: [1 thing tied to active goals]
 
 ## Availability constraints applied
-[Brief note on any activities that couldn't be scheduled due to availability, or slots that were honoured — e.g. "Yoga scheduled Tue/Thu only per athlete's availability"]
+[Brief note on any activities that couldn't be scheduled due to availability, or slots that were honoured — e.g. "Yoga scheduled Tue/Thu only per athlete's availability". Note which gym session type was assigned to each slot and why.]
 
 ## Day-by-day plan
 
