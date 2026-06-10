@@ -29,7 +29,8 @@ All other files and folders — `.claude/`, `agents/`, `config/`, `docs/`, `READ
 | `/coach` | **Start here.** Reads all athlete data and acts as a personal coach. Detects missing data, spots patterns, asks questions, suggests actions. |
 | `/setup-profile` | Conversational intake to fill in `private/data/profile/profile.md` |
 | `/setup-goals` | Goal-setting session. Saves up to 3 active goals to `private/data/goals/goals.md` |
-| `/log-session` | Debrief after surfing. Saves a session log to `private/data/sessions/YYYY-MM-DD.md` |
+| `/setup-metrics` | Collects health and performance metrics (HRV, sleep, VO2 max, stress, etc.). Saves to `private/data/metrics/metrics.md` |
+| `/log-session` | Debrief after surfing. Captures session details + pre-session metric snapshot. Saves to `private/data/sessions/YYYY-MM-DD.md` |
 | `/reset` | Clears all athlete data in `private/`. Preserves the full coaching system. Resets for a new user. |
 
 ## Recommended first-run flow
@@ -37,8 +38,9 @@ All other files and folders — `.claude/`, `agents/`, `config/`, `docs/`, `READ
 1. `/coach` — detects no data, guides the athlete from here
 2. `/setup-profile` — fill in the surfer profile
 3. `/setup-goals` — set 1–3 concrete goals
-4. Go surf → `/log-session` → repeat
-5. `/coach` regularly — the more data, the better the coaching
+4. `/setup-metrics` — capture health and performance baselines
+5. Go surf → `/log-session` → repeat
+6. `/coach` regularly — the more data, the better the coaching
 
 ---
 
@@ -52,6 +54,9 @@ Max 3 active goals. Each must have: objective, current level, target, deadline, 
 
 ### Profile — `private/data/profile/profile.md`
 Surfer background: name, level, home break, boards, stance, strengths, weaknesses, current focus.
+
+### Metrics — `private/data/metrics/metrics.md`
+Health and performance baselines: HRV, resting heart rate, sleep, VO2 max, strength, mobility, stress, energy, motivation. Updated via `/setup-metrics`. A snapshot of the most relevant fields is also captured in each session log under "Pre-session state".
 
 ---
 

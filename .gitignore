@@ -10,6 +10,7 @@ private/data/sessions/*.md
 !private/data/sessions/template.md
 private/data/goals/goals.md
 private/data/profile/profile.md
+private/data/metrics/metrics.md
 private/agents/*
 private/skills/*
 !private/**/.gitkeep

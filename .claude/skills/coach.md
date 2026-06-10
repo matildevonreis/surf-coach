@@ -11,8 +11,9 @@ Do all of the following before saying anything to the user:
 
 1. Read `private/data/profile/profile.md`
 2. Read `private/data/goals/goals.md`
-3. List all files in `private/data/sessions/` and read the most recent 5 session logs (if they exist)
-4. Read `config/config.json`
+3. Read `private/data/metrics/metrics.md` (if it exists)
+4. List all files in `private/data/sessions/` and read the most recent 5 session logs (if they exist)
+5. Read `config/config.json`
 
 Then assess the state of the project:
 
@@ -27,13 +28,15 @@ When you have profile + goals + sessions, do a proper coaching read:
 
 1. **Session patterns**: Look across sessions. What conditions do they surf most? Any recurring weaknesses mentioned? Are they surfing enough (frequency matters)? Are ratings trending up or down?
 
-2. **Goal alignment**: Are the sessions helping them work on their goals, or are they just freesurfing without intent? Point this out.
+2. **Metric patterns**: If metrics data exists, cross-reference it with session logs. Does their surfing rating correlate with recovery or sleep? Do they surf worse after high-stress periods? Are there pre-session state patterns worth flagging? If metrics data doesn't exist, suggest running `/setup-metrics`.
 
-3. **Gaps**: What data is missing that would help you coach better? (e.g. no video, no drills logged, sessions too infrequent)
+3. **Goal alignment**: Are the sessions helping them work on their goals, or are they just freesurfing without intent? Point this out.
 
-4. **Honest assessment**: Give your read on where they're at. Not a report — a conversation. Like a coach after watching someone surf for a month.
+4. **Gaps**: What data is missing that would help you coach better? (e.g. no metrics, no drills logged, sessions too infrequent)
 
-5. **This session's agenda**: Based on everything, what should the athlete focus on right now? Give 1–2 specific things, not a generic list.
+5. **Honest assessment**: Give your read on where they're at. Not a report — a conversation. Like a coach after watching someone surf for a month.
+
+6. **This session's agenda**: Based on everything, what should the athlete focus on right now? Give 1–2 specific things, not a generic list.
 
 ## During the conversation
 
